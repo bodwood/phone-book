@@ -12,7 +12,13 @@ static void Main()
   if(answer == "Y" || answer == "y"){
     addContact();
   }
-  Console.WriteLine(phoneNumbers);
+
+  Console.WriteLine("Would you like to lookup a contact in the dictionary?");
+  string newAnswer = Console.ReadLine();
+  if(newAnswer == "Y" || newAnswer == "y"){
+    LookUpContact();
+  }
+
 
 }
 static void addContact(){
@@ -24,10 +30,12 @@ static void addContact(){
   phoneNumbers.Add(newName, newNumber);
 }
 
-
-
 static void LookUpContact(){
+  Console.WriteLine("Who would you like to look up in the dictionary?");
+  string personInput = Console.ReadLine();
+  string findPersonValue = phoneNumbers[personInput];
 
+  Console.WriteLine(personInput + "\'s phone number is " + findPersonValue);
 }
 
 }
