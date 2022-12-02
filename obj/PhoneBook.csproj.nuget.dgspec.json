@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\bodie\\OneDrive\\Desktop\\Epicodus-Projects\\phone-book\\PhoneBook.csproj": {}
+    "C:\\Users\\bodie\\onedrive\\desktop\\epicodus-projects\\phone-book\\PhoneBook.csproj": {}
   },
   "projects": {
-    "C:\\Users\\bodie\\OneDrive\\Desktop\\Epicodus-Projects\\phone-book\\PhoneBook.csproj": {
+    "C:\\Users\\bodie\\onedrive\\desktop\\epicodus-projects\\phone-book\\PhoneBook.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\bodie\\OneDrive\\Desktop\\Epicodus-Projects\\phone-book\\PhoneBook.csproj",
+        "projectUniqueName": "C:\\Users\\bodie\\onedrive\\desktop\\epicodus-projects\\phone-book\\PhoneBook.csproj",
         "projectName": "PhoneBook",
-        "projectPath": "C:\\Users\\bodie\\OneDrive\\Desktop\\Epicodus-Projects\\phone-book\\PhoneBook.csproj",
+        "projectPath": "C:\\Users\\bodie\\onedrive\\desktop\\epicodus-projects\\phone-book\\PhoneBook.csproj",
         "packagesPath": "C:\\Users\\bodie\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\bodie\\OneDrive\\Desktop\\Epicodus-Projects\\phone-book\\obj\\",
+        "outputPath": "C:\\Users\\bodie\\onedrive\\desktop\\epicodus-projects\\phone-book\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\bodie\\AppData\\Roaming\\NuGet\\NuGet.Config"
