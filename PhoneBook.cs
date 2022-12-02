@@ -7,7 +7,7 @@ class PhoneBook
 
   static void Main()
   {
-    Console.WriteLine("\n|| Main Menu || \nPlease make your selection:\n[1] Add new contact\n[2] Lookup a contact");
+    Console.WriteLine("\n|| Main Menu || \nPlease make your selection:\n[1] Add new contact\n[2] Lookup a contact\n[3] Exit");
     string answer = Console.ReadLine();
     if (answer == "1")
     {
@@ -17,6 +17,10 @@ class PhoneBook
     else if (answer == "2")
     {
       LookUpContact();
+    }
+    else if(answer == "3"){
+      Console.WriteLine("Goodbye!");
+      System.Environment.Exit(0);
     }
   }
 
