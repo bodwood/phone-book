@@ -8,13 +8,13 @@ class PhoneBook
 
   static void Main()
   {
-    Console.WriteLine("\n|| Main Menu || \n Would you like to enter a new contact to the dictionary? Type 'Y' for yes and 'N' for no");
+    Console.WriteLine("\n|| Main Menu || \nPlease make your selection:\n[1] Add new contact\n[2] Lookup a contact new contact");
     string answer = Console.ReadLine();
-    if (answer == "Y" || answer == "y")
+    if (answer == "1")
     {
       addContact();
     }
-    else if (answer == "N" || answer == "n")
+    else if (answer == "2")
     {
       Console.WriteLine("\nWould you like to lookup a contact in the dictionary? Type 'Y' for yes and 'N' for no");
       string lookUpAnswer = Console.ReadLine();
@@ -32,13 +32,21 @@ class PhoneBook
 
   static void addContact()
   {
+    
     Console.WriteLine("Please enter their name: ");
     string newName = Console.ReadLine();
     Console.WriteLine("Please enter their phone number: ");
     string newNumber = Console.ReadLine();
 
     phoneNumbers.Add(newName, newNumber);
+
+    Console.WriteLine("\nWould you like to add another person to the dictionary? Type 'Y' for yes and 'N' for no");
+    string anotherContact = Console.ReadLine();
+    if(anotherContact == "Y" || anotherContact == "y"){
+      addContact();
+    }else{
     Main();
+    }
   }
 
   static void LookUpContact()
@@ -54,6 +62,8 @@ class PhoneBook
     string findPersonValue = phoneNumbers[personInput];
 
     Console.WriteLine(personInput + "\'s phone number is " + findPersonValue);
+
+    Main();
   }
 
 }
